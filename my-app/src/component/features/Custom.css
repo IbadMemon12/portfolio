@@ -1,0 +1,59 @@
+/* Custom.css */
+.custom-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: burlywood;
+  }
+  
+  .custom-content {
+    text-align: center;
+  }
+  
+  .animated-box {
+    margin-top: 20px;
+    background-color: #403737;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animated-text {
+    font-size: 1.2em;
+    margin: 0;
+  }
+  
+  .animated-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ff9900;
+    color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .animated-button:hover {
+    background-color: #333;
+  }
+  
